@@ -10,6 +10,7 @@ import (
 
 	migratecmd "github.com/forbole/callisto/v4/cmd/migrate"
 	parsecmd "github.com/forbole/callisto/v4/cmd/parse"
+	nucleusapp "github.com/komodoplatform/nucleus/app"
 
 	"github.com/forbole/callisto/v4/types/config"
 
@@ -56,6 +57,7 @@ func main() {
 func getBasicManagers() []module.BasicManager {
 	return []module.BasicManager{
 		simapp.ModuleBasics,
+		nucleusapp.ModuleBasics,
 	}
 }
 

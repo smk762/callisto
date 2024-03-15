@@ -8,3 +8,5 @@ config.yaml
 
 # Coverage
 coverage.*
+
+callisto_conf.yaml
